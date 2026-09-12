@@ -15,10 +15,10 @@ const PAIRS: Pair[] = [
   {
     before: "/images/client1-before.png",
     after: "/images/client1-after.png",
-    beforeLabel: "Before · Jul 2025",
-    afterLabel: "After · Feb 2026",
-    title: "Fat loss without a strict diet",
-    body: "Seven months of online coaching, training around a full-time schedule.",
+    beforeLabel: "Before · Jan 2024",
+    afterLabel: "After · Dec 2024",
+    title: "A clean bulk, before the cut",
+    body: "55 kg to 60.5 kg on a clean bulk, setting up for a cut in 2025.",
   },
   {
     before: "/images/client2-before.png",
