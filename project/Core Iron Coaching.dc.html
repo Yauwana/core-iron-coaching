@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Core Iron Coaching — Online &amp; 1-on-1 Personal Training</title>
+<link rel="stylesheet" href="_ds/core-iron-coaching-design-system-3e146684-3dd7-4e18-b5d2-1a510e175d8e/tokens/fonts.css" />
+<link rel="stylesheet" href="_ds/core-iron-coaching-design-system-3e146684-3dd7-4e18-b5d2-1a510e175d8e/tokens/colors.css" />
+<link rel="stylesheet" href="_ds/core-iron-coaching-design-system-3e146684-3dd7-4e18-b5d2-1a510e175d8e/tokens/typography.css" />
+<link rel="stylesheet" href="_ds/core-iron-coaching-design-system-3e146684-3dd7-4e18-b5d2-1a510e175d8e/tokens/spacing.css" />
+<link rel="stylesheet" href="_ds/core-iron-coaching-design-system-3e146684-3dd7-4e18-b5d2-1a510e175d8e/tokens/effects.css" />
+<link rel="stylesheet" href="_ds/core-iron-coaching-design-system-3e146684-3dd7-4e18-b5d2-1a510e175d8e/tokens/motion.css" />
+<link rel="stylesheet" href="_ds/core-iron-coaching-design-system-3e146684-3dd7-4e18-b5d2-1a510e175d8e/tokens/base.css" />
+<link rel="stylesheet" href="_ds/core-iron-coaching-design-system-3e146684-3dd7-4e18-b5d2-1a510e175d8e/styles.css" />
+<script src="_ds/core-iron-coaching-design-system-3e146684-3dd7-4e18-b5d2-1a510e175d8e/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--iron-900); color: var(--text-body); font-family: var(--font-body); font-size: var(--fs-body); line-height: var(--lh-body); -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: var(--orange-500); text-decoration: none; }
+  a:hover { color: var(--orange-400); }
+  summary::-webkit-details-marker { display: none; }
+</style>
+</helmet>
+
+<div style="width:100%;max-width:100%;overflow-x:hidden;background:var(--iron-900)">
+
+  <header style="position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 48px;background:rgba(17,19,21,.70);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border-hairline);flex-wrap:wrap">
+    <a href="#top" style="display:block;flex:none"><img src="./logo-full.png" alt="Core Iron Coaching" style="height:46px;width:auto;display:block" /></a>
+    <nav style="display:flex;align-items:center;gap:26px;flex-wrap:wrap">
+      <a href="#coaching" style="font-family:var(--font-display);font-variation-settings:'wdth' 84;font-weight:700;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--iron-200)" style-hover="color:var(--orange-500)">Coaching</a>
+      <a href="#about" style="font-family:var(--font-display);font-variation-settings:'wdth' 84;font-weight:700;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--iron-200)" style-hover="color:var(--orange-500)">About</a>
+      <a href="#results" style="font-family:var(--font-display);font-variation-settings:'wdth' 84;font-weight:700;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--iron-200)" style-hover="color:var(--orange-500)">Results</a>
+      <a href="#how" style="font-family:var(--font-display);font-variation-settings:'wdth' 84;font-weight:700;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--iron-200)" style-hover="color:var(--orange-500)">Method</a>
+      <a href="#contact" style="font-family:var(--font-display);font-variation-settings:'wdth' 84;font-weight:700;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--iron-200)" style-hover="color:var(--orange-500)">Contact</a>
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Button" size="sm" variant="primary" icon="calendar-days" href="https://calendly.com/coreironcoaching/initial-call" target="_blank" rel="noopener" hint-size="150px,38px">Free consult</x-import>
+    </nav>
+  </header>
+
+  <section id="top" style="position:relative;overflow:hidden;padding:72px 48px 64px;background:var(--iron-900);border-bottom:1px solid var(--border-hairline)">
+    <span aria-hidden="true" style="position:absolute;left:0;right:0;bottom:-6px;text-align:center;font-family:var(--font-display);font-variation-settings:'wdth' 70;font-style:italic;font-weight:800;font-size:clamp(70px,11vw,132px);line-height:1;letter-spacing:0.02em;text-transform:uppercase;color:rgba(255,255,255,.055);white-space:nowrap;pointer-events:none">Core Iron</span>
+    <div style="position:relative;max-width:var(--container-max);margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;align-items:center">
+      <div style="min-width:0">
+        <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Eyebrow" hint-size="auto,16px">Online worldwide · In person in Mickleham</x-import>
+        <div style="margin-top:16px">
+          <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.SectionHeading" level="{{ 1 }}" accent="around your life" style="font-size:clamp(40px,5.6vw,72px)" hint-size="100%,170px">Train with a coach who builds</x-import>
+        </div>
+        <p style="margin:20px 0 0;max-width:56ch;font-size:var(--fs-body-lg);line-height:1.7;color:var(--iron-200);text-wrap:pretty">Personalised strength and fat-loss coaching for beginners and busy people. Online from anywhere in the world, or one-on-one at Genesis Fitness Mickleham, Melbourne.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:32px">
+          <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Button" size="lg" variant="primary" icon-right="arrow-right" href="https://calendly.com/coreironcoaching/initial-call" target="_blank" rel="noopener" hint-size="270px,54px">Book a free consult</x-import>
+          <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Button" size="lg" variant="secondary" icon="message-circle" href="https://wa.me/61458975420" target="_blank" rel="noopener" hint-size="250px,54px">Message on WhatsApp</x-import>
+        </div>
+      </div>
+      <div style="min-width:0">
+        <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.PhotoFrame" src="./coach-hero-stage-3.png" ratio="4 / 5" label="Coach portrait" hint-size="100%,520px"></x-import>
+      </div>
+    </div>
+    <div style="position:relative;max-width:var(--container-max);margin:44px auto 0">
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:0">
+        <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.StatCard" value="2 yrs" label="Coaching clients" hint-size="100%,108px"></x-import>
+        <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.StatCard" value="NHFA" label="Certified coach" hint-size="100%,108px"></x-import>
+        <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.StatCard" value="1-on-1" label="Never templated" hint-size="100%,108px"></x-import>
+      </div>
+    </div>
+  </section>
+
+  <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Section" band="darker" align="left" kicker="Coaching options" title="Three ways to train" accent="with me" intro="Every option starts with the same free consult, so we can work out which one actually fits your week." hint-size="100%,600px">
+    <div id="coaching" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px">
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Card" surface="dark" interactive="{{ true }}" padding="28px 26px" style="display:flex;flex-direction:column;gap:14px" hint-size="100%,420px">
+        <span style="display:grid;place-items:center;width:42px;height:42px;border-radius:var(--radius-sm);background:rgba(226,105,31,.12);border:1px solid rgba(226,105,31,.28);color:var(--orange-500)"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Icon" name="video" size="{{ 20 }}" hint-size="20px,20px"></x-import></span>
+        <span style="font-family:var(--font-display);font-variation-settings:'wdth' 78;font-style:italic;font-weight:800;font-size:var(--fs-title-2);line-height:var(--lh-title);text-transform:uppercase;color:var(--text-display)">Online coaching</span>
+        <p style="margin:0;font-size:var(--fs-body-sm);line-height:1.75;color:var(--text-muted)">A program written for your gym, your equipment and your schedule, with form reviews and regular check-ins over message and video.</p>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px">
+          <li style="display:flex;align-items:flex-start;gap:9px;font-size:var(--fs-body-sm);color:var(--text-body)"><span style="color:var(--orange-500);flex:none;display:grid;place-items:center;height:22px"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Icon" name="check" size="{{ 15 }}" hint-size="15px,15px"></x-import></span>Personalised training plan</li>
+          <li style="display:flex;align-items:flex-start;gap:9px;font-size:var(--fs-body-sm);color:var(--text-body)"><span style="color:var(--orange-500);flex:none;display:grid;place-items:center;height:22px"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Icon" name="check" size="{{ 15 }}" hint-size="15px,15px"></x-import></span>Video form feedback</li>
+          <li style="display:flex;align-items:flex-start;gap:9px;font-size:var(--fs-body-sm);color:var(--text-body)"><span style="color:var(--orange-500);flex:none;display:grid;place-items:center;height:22px"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Icon" name="check" size="{{ 15 }}" hint-size="15px,15px"></x-import></span>Nutrition guidance without a strict diet</li>
+          <li style="display:flex;align-items:flex-start;gap:9px;font-size:var(--fs-body-sm);color:var(--text-body)"><span style="color:var(--orange-500);flex:none;display:grid;place-items:center;height:22px"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Icon" name="check" size="{{ 15 }}" hint-size="15px,15px"></x-import></span>Fortnightly check-in calls</li>
+        </ul>
+        <span style="margin-top:auto;display:block"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Button" size="sm" variant="ghost" icon-right="arrow-right" href="https://calendly.com/coreironcoaching/initial-call" target="_blank" rel="noopener" style="padding-left:0" hint-size="120px,34px">Enquire</x-import></span>
+      </x-import>
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Card" surface="dark" interactive="{{ true }}" padding="28px 26px" style="display:flex;flex-direction:column;gap:14px" hint-size="100%,420px">
+        <span style="display:grid;place-items:center;width:42px;height:42px;border-radius:var(--radius-sm);background:rgba(226,105,31,.12);border:1px solid rgba(226,105,31,.28);color:var(--orange-500)"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Icon" name="dumbbell" size="{{ 20 }}" hint-size="20px,20px"></x-import></span>
+        <span style="font-family:var(--font-display);font-variation-settings:'wdth' 78;font-style:italic;font-weight:800;font-size:var(--fs-title-2);line-height:var(--lh-title);text-transform:uppercase;color:var(--text-display)">1-on-1 in person</span>
+        <p style="margin:0;font-size:var(--fs-body-sm);line-height:1.75;color:var(--text-muted)">Hands-on sessions on the gym floor at Genesis Fitness Mickleham. Ideal if you are new to lifting and want someone next to you getting the technique right from day one.</p>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px">
+          <li style="display:flex;align-items:flex-start;gap:9px;font-size:var(--fs-body-sm);color:var(--text-body)"><span style="color:var(--orange-500);flex:none;display:grid;place-items:center;height:22px"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Icon" name="check" size="{{ 15 }}" hint-size="15px,15px"></x-import></span>Coached every set</li>
+          <li style="display:flex;align-items:flex-start;gap:9px;font-size:var(--fs-body-sm);color:var(--text-body)"><span style="color:var(--orange-500);flex:none;display:grid;place-items:center;height:22px"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Icon" name="check" size="{{ 15 }}" hint-size="15px,15px"></x-import></span>Technique from the ground up</li>
+          <li style="display:flex;align-items:flex-start;gap:9px;font-size:var(--fs-body-sm);color:var(--text-body)"><span style="color:var(--orange-500);flex:none;display:grid;place-items:center;height:22px"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Icon" name="check" size="{{ 15 }}" hint-size="15px,15px"></x-import></span>Confidence in the weights room</li>
+          <li style="display:flex;align-items:flex-start;gap:9px;font-size:var(--fs-body-sm);color:var(--text-body)"><span style="color:var(--orange-500);flex:none;display:grid;place-items:center;height:22px"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Icon" name="check" size="{{ 15 }}" hint-size="15px,15px"></x-import></span>Fortnightly check-in calls</li>
+        </ul>
+        <span style="margin-top:auto;display:block"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Button" size="sm" variant="ghost" icon-right="arrow-right" href="https://calendly.com/coreironcoaching/initial-call" target="_blank" rel="noopener" style="padding-left:0" hint-size="120px,34px">Enquire</x-import></span>
+      </x-import>
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Card" surface="dark" interactive="{{ true }}" padding="28px 26px" style="display:flex;flex-direction:column;gap:14px" hint-size="100%,420px">
+        <span style="display:grid;place-items:center;width:42px;height:42px;border-radius:var(--radius-sm);background:rgba(226,105,31,.12);border:1px solid rgba(226,105,31,.28);color:var(--orange-500)"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Icon" name="trending-up" size="{{ 20 }}" hint-size="20px,20px"></x-import></span>
+        <span style="font-family:var(--font-display);font-variation-settings:'wdth' 78;font-style:italic;font-weight:800;font-size:var(--fs-title-2);line-height:var(--lh-title);text-transform:uppercase;color:var(--text-display)">Hybrid</span>
+        <p style="margin:0;font-size:var(--fs-body-sm);line-height:1.75;color:var(--text-muted)">In-person sessions when you want the coaching eye, online check-ins for the rest of the week. The best of both without the full in-person commitment.</p>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px">
+          <li style="display:flex;align-items:flex-start;gap:9px;font-size:var(--fs-body-sm);color:var(--text-body)"><span style="color:var(--orange-500);flex:none;display:grid;place-items:center;height:22px"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Icon" name="check" size="{{ 15 }}" hint-size="15px,15px"></x-import></span>In-person sessions as needed</li>
+          <li style="display:flex;align-items:flex-start;gap:9px;font-size:var(--fs-body-sm);color:var(--text-body)"><span style="color:var(--orange-500);flex:none;display:grid;place-items:center;height:22px"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Icon" name="check" size="{{ 15 }}" hint-size="15px,15px"></x-import></span>Program for the days you train solo</li>
+          <li style="display:flex;align-items:flex-start;gap:9px;font-size:var(--fs-body-sm);color:var(--text-body)"><span style="color:var(--orange-500);flex:none;display:grid;place-items:center;height:22px"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Icon" name="check" size="{{ 15 }}" hint-size="15px,15px"></x-import></span>Flexible week to week</li>
+          <li style="display:flex;align-items:flex-start;gap:9px;font-size:var(--fs-body-sm);color:var(--text-body)"><span style="color:var(--orange-500);flex:none;display:grid;place-items:center;height:22px"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Icon" name="check" size="{{ 15 }}" hint-size="15px,15px"></x-import></span>Fortnightly check-in calls</li>
+        </ul>
+        <span style="margin-top:auto;display:block"><x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Button" size="sm" variant="ghost" icon-right="arrow-right" href="https://calendly.com/coreironcoaching/initial-call" target="_blank" rel="noopener" style="padding-left:0" hint-size="120px,34px">Enquire</x-import></span>
+      </x-import>
+    </div>
+    <p style="margin:20px 0 0;font-size:var(--fs-caption);color:var(--text-faint)"><span style="color:var(--orange-500)">*</span> Pricing depends on the format and how often we work together. We will cover it on the consult call.</p>
+  </x-import>
+
+  <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Section" band="dark" align="left" kicker="Who I work with" title="Built for people with" accent="a real schedule" hint-size="100%,420px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.FeatureCard" icon="user" title="Total beginners" hint-size="100%,180px">Never touched a barbell. We start with the basics and build from there.</x-import>
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.FeatureCard" icon="clock" title="Busy professionals" hint-size="100%,180px">Three or four sessions that fit around work, travel and family.</x-import>
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.FeatureCard" icon="heart-pulse" title="Fat loss" hint-size="100%,180px">Sustainable changes you can live with, not a diet you quit in a month.</x-import>
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.FeatureCard" icon="target" title="Strength and muscle" hint-size="100%,180px">Progressive programming for steady size and strength over the long run.</x-import>
+    </div>
+  </x-import>
+
+  <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Section" band="gradient" align="left" hint-size="100%,600px">
+    <div id="about" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:48px;align-items:center">
+      <div style="min-width:0">
+        <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.PhotoFrame" ratio="4 / 5" label="Photo of Ravindra at Genesis Fitness Mickleham" hint-size="100%,440px"></x-import>
+      </div>
+      <div style="min-width:0">
+        <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Eyebrow" hint-size="auto,16px">Your coach</x-import>
+        <div style="margin:14px 0 22px">
+          <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.SectionHeading" level="{{ 3 }}" accent="program second" hint-size="100%,90px">Real life first,</x-import>
+        </div>
+        <p style="margin:0;max-width:62ch;font-size:var(--fs-body-lg);line-height:1.75;color:var(--text-body);text-wrap:pretty">For the past two years I've coached clients online, building personalised programs that get real results — helping one client lose weight without a strict diet, and others build steady muscle over a year or more, adapting the plan to real life rather than a rigid template. I'm now bringing that same one-on-one coaching approach in person at Genesis Fitness Mickleham, Melbourne. Backed by NHFA Cert</p>
+        <div style="margin-top:20px;display:flex;flex-direction:column;gap:2px">
+          <span style="font-family:var(--font-display);font-variation-settings:'wdth' 84;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:0.16em;color:var(--orange-500)">Ravindra</span>
+          <span style="font-size:var(--fs-caption);color:var(--text-muted)">Coach, Core Iron Coaching</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:22px">
+          <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Badge" tone="solid" shape="square" hint-size="auto,22px">NHFA certified</x-import>
+          <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Badge" tone="solid" shape="square" hint-size="auto,22px">2 years coaching</x-import>
+          <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Badge" tone="solid" shape="square" hint-size="auto,22px">Online and in person</x-import>
+        </div>
+      </div>
+    </div>
+  </x-import>
+
+  <sc-if value="{{ showResults }}" hint-placeholder-val="{{ true }}">
+    <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Section" band="darker" align="left" kicker="Client results" title="Real results," accent="real people" intro="Before and after, from clients who stuck with a plan that fit their life." hint-size="100%,620px">
+      <div id="results" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px">
+        <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Card" surface="dark" padding="16px" hint-size="100%,520px">
+          <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px">
+            <div style="min-width:0">
+              <div style="position:relative;width:100%;aspect-ratio:4/5;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--border-hairline)"><img src="./c1-before.png" alt="Client one before coaching" style="width:100%;height:100%;object-fit:cover;display:block" /></div>
+              <div style="margin-top:9px;font-family:var(--font-display);font-variation-settings:'wdth' 84;font-weight:700;font-size:var(--fs-eyebrow);letter-spacing:0.18em;text-transform:uppercase;color:var(--text-faint)">Before · Jul 2025</div>
+            </div>
+            <div style="min-width:0">
+              <div style="position:relative;width:100%;aspect-ratio:4/5;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--border-accent)"><img src="./c1-after.png" alt="Client one after coaching" style="width:100%;height:100%;object-fit:cover;display:block" /></div>
+              <div style="margin-top:9px;font-family:var(--font-display);font-variation-settings:'wdth' 84;font-weight:700;font-size:var(--fs-eyebrow);letter-spacing:0.18em;text-transform:uppercase;color:var(--orange-500)">After · Feb 2026</div>
+            </div>
+          </div>
+          <div style="margin-top:18px;font-family:var(--font-display);font-variation-settings:'wdth' 78;font-style:italic;font-weight:800;font-size:var(--fs-title-3);text-transform:uppercase;color:var(--text-display)">Fat loss without a strict diet</div>
+          <p style="margin:8px 0 0;font-size:var(--fs-body-sm);line-height:1.7;color:var(--text-muted)">Seven months of online coaching, training around a full-time schedule.</p>
+        </x-import>
+        <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Card" surface="dark" padding="16px" hint-size="100%,520px">
+          <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px">
+            <div style="min-width:0">
+              <div style="position:relative;width:100%;aspect-ratio:4/5;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--border-hairline)"><img src="./c2-before.png" alt="Client two before coaching" style="width:100%;height:100%;object-fit:cover;display:block" /></div>
+              <div style="margin-top:9px;font-family:var(--font-display);font-variation-settings:'wdth' 84;font-weight:700;font-size:var(--fs-eyebrow);letter-spacing:0.18em;text-transform:uppercase;color:var(--text-faint)">Before · Oct 2024</div>
+            </div>
+            <div style="min-width:0">
+              <div style="position:relative;width:100%;aspect-ratio:4/5;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--border-accent)"><img src="./c2-after.png" alt="Client two after coaching" style="width:100%;height:100%;object-fit:cover;display:block" /></div>
+              <div style="margin-top:9px;font-family:var(--font-display);font-variation-settings:'wdth' 84;font-weight:700;font-size:var(--fs-eyebrow);letter-spacing:0.18em;text-transform:uppercase;color:var(--orange-500)">After · Dec 2025</div>
+            </div>
+          </div>
+          <div style="margin-top:18px;font-family:var(--font-display);font-variation-settings:'wdth' 78;font-style:italic;font-weight:800;font-size:var(--fs-title-3);text-transform:uppercase;color:var(--text-display)">Muscle gain at the same weight</div>
+          <p style="margin:8px 0 0;font-size:var(--fs-body-sm);line-height:1.7;color:var(--text-muted)">14 months of coaching. 68 kg to 68.2 kg on the scale, a very different body composition.</p>
+        </x-import>
+      </div>
+    </x-import>
+  </sc-if>
+
+  <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Section" band="dark" align="left" kicker="The method" title="How it" accent="works" hint-size="100%,400px">
+    <div id="how" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Card" surface="raised" padding="28px 26px" hint-size="100%,230px">
+        <div style="font-family:var(--font-display);font-variation-settings:'wdth' 70;font-style:italic;font-weight:800;font-size:52px;line-height:1;color:rgba(226,105,31,.35)">01</div>
+        <div style="margin:12px 0 10px;font-family:var(--font-display);font-variation-settings:'wdth' 78;font-style:italic;font-weight:800;font-size:var(--fs-title-3);text-transform:uppercase;color:var(--text-display)">Free consult</div>
+        <p style="margin:0;font-size:var(--fs-body-sm);line-height:1.75;color:var(--text-muted)">A short call about your goals, your history and how much time you actually have. No pressure, no sales script.</p>
+      </x-import>
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Card" surface="raised" padding="28px 26px" hint-size="100%,230px">
+        <div style="font-family:var(--font-display);font-variation-settings:'wdth' 70;font-style:italic;font-weight:800;font-size:52px;line-height:1;color:rgba(226,105,31,.35)">02</div>
+        <div style="margin:12px 0 10px;font-family:var(--font-display);font-variation-settings:'wdth' 78;font-style:italic;font-weight:800;font-size:var(--fs-title-3);text-transform:uppercase;color:var(--text-display)">Your plan</div>
+        <p style="margin:0;font-size:var(--fs-body-sm);line-height:1.75;color:var(--text-muted)">I build the program around your equipment, schedule and experience level, and walk you through it.</p>
+      </x-import>
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Card" surface="raised" padding="28px 26px" hint-size="100%,230px">
+        <div style="font-family:var(--font-display);font-variation-settings:'wdth' 70;font-style:italic;font-weight:800;font-size:52px;line-height:1;color:rgba(226,105,31,.35)">03</div>
+        <div style="margin:12px 0 10px;font-family:var(--font-display);font-variation-settings:'wdth' 78;font-style:italic;font-weight:800;font-size:var(--fs-title-3);text-transform:uppercase;color:var(--text-display)">Train and adjust</div>
+        <p style="margin:0;font-size:var(--fs-body-sm);line-height:1.75;color:var(--text-muted)">We check in regularly, review your lifts and adapt as life changes. Progress you can keep.</p>
+      </x-import>
+    </div>
+  </x-import>
+
+  <sc-if value="{{ showFaq }}" hint-placeholder-val="{{ true }}">
+    <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Section" band="darker" align="left" width="760px" kicker="Before you book" title="Questions" hint-size="100%,420px">
+      <details style="border-top:1px solid var(--border-hairline);padding:18px 0">
+        <summary style="cursor:pointer;list-style:none;font-family:var(--font-display);font-variation-settings:'wdth' 78;font-style:italic;font-weight:800;font-size:var(--fs-title-3);text-transform:uppercase;color:var(--text-display)">I live outside Australia. Can you still coach me?</summary>
+        <p style="margin:12px 0 0;font-size:var(--fs-body-sm);line-height:1.75;color:var(--text-muted)">Yes. Online coaching runs over message and video, so time zone and country make no difference. Clients anywhere are welcome.</p>
+      </details>
+      <details style="border-top:1px solid var(--border-hairline);padding:18px 0">
+        <summary style="cursor:pointer;list-style:none;font-family:var(--font-display);font-variation-settings:'wdth' 78;font-style:italic;font-weight:800;font-size:var(--fs-title-3);text-transform:uppercase;color:var(--text-display)">I've never trained before. Is that a problem?</summary>
+        <p style="margin:12px 0 0;font-size:var(--fs-body-sm);line-height:1.75;color:var(--text-muted)">Not at all. Most people start there. We build technique and confidence first, then add load.</p>
+      </details>
+      <details style="border-top:1px solid var(--border-hairline);padding:18px 0">
+        <summary style="cursor:pointer;list-style:none;font-family:var(--font-display);font-variation-settings:'wdth' 78;font-style:italic;font-weight:800;font-size:var(--fs-title-3);text-transform:uppercase;color:var(--text-display)">Do I have to follow a strict diet?</summary>
+        <p style="margin:12px 0 0;font-size:var(--fs-body-sm);line-height:1.75;color:var(--text-muted)">No. Nutrition guidance is built around what you already eat, so it is something you can stick to.</p>
+      </details>
+      <details style="border-top:1px solid var(--border-hairline);border-bottom:1px solid var(--border-hairline);padding:18px 0">
+        <summary style="cursor:pointer;list-style:none;font-family:var(--font-display);font-variation-settings:'wdth' 78;font-style:italic;font-weight:800;font-size:var(--fs-title-3);text-transform:uppercase;color:var(--text-display)">What happens on the free consult?</summary>
+        <p style="margin:12px 0 0;font-size:var(--fs-body-sm);line-height:1.75;color:var(--text-muted)">We talk through your goals, training history, schedule and any injuries, and I tell you honestly which format suits you and what it costs.</p>
+      </details>
+    </x-import>
+  </sc-if>
+
+  <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Section" band="gradient" align="center" kicker="Free consultation" title="Ready to start your" accent="training?" intro="Pick a time that suits you, or send a message first if you would rather ask a few questions." hint-size="100%,480px">
+    <div id="contact" style="display:flex;justify-content:center;margin-bottom:40px">
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.Button" size="lg" variant="primary" icon-right="arrow-right" href="https://calendly.com/coreironcoaching/initial-call" target="_blank" rel="noopener" hint-size="240px,54px">Choose a time</x-import>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.ContactTile" icon="message-circle" label="WhatsApp" value="+61 458 975 420" detail="Fastest reply, any time zone" href="https://wa.me/61458975420" hint-size="100%,200px"></x-import>
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.ContactTile" icon="mail" label="Email" value="ravindray2@gmail.com" detail="For longer questions" href="mailto:ravindray2@gmail.com?subject=Free%20consult%20enquiry%20-%20Core%20Iron%20Coaching" hint-size="100%,200px"></x-import>
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.ContactTile" icon="map-pin" label="In person" value="Genesis Fitness Mickleham" detail="Mickleham, Melbourne VIC" hint-size="100%,200px"></x-import>
+      <x-import component-from-global-scope="CoreIronCoachingDesignSystem_3e1466.ContactTile" icon="video" label="Online" value="Coaching worldwide" detail="Message and video check-ins" hint-size="100%,200px"></x-import>
+    </div>
+  </x-import>
+
+  <footer style="padding:44px 48px 26px;background:var(--iron-950);border-top:1px solid var(--border-hairline)">
+    <div style="max-width:var(--container-max);margin:0 auto;display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between">
+      <img src="./logo-full.png" alt="Core Iron Coaching" style="height:64px;width:auto;display:block" />
+      <div style="display:flex;flex-wrap:wrap;gap:22px">
+        <a href="mailto:ravindray2@gmail.com" style="font-family:var(--font-display);font-variation-settings:'wdth' 84;font-weight:700;font-size:var(--fs-eyebrow);letter-spacing:0.18em;text-transform:uppercase">Email</a>
+        <a href="https://wa.me/61458975420" target="_blank" rel="noopener" style="font-family:var(--font-display);font-variation-settings:'wdth' 84;font-weight:700;font-size:var(--fs-eyebrow);letter-spacing:0.18em;text-transform:uppercase">WhatsApp</a>
+        <a href="https://calendly.com/coreironcoaching/initial-call" target="_blank" rel="noopener" style="font-family:var(--font-display);font-variation-settings:'wdth' 84;font-weight:700;font-size:var(--fs-eyebrow);letter-spacing:0.18em;text-transform:uppercase">Book a consult</a>
+      </div>
+    </div>
+    <div style="max-width:var(--container-max);margin:28px auto 0;padding-top:18px;border-top:1px solid var(--border-hairline);font-size:var(--fs-caption);color:var(--iron-400)">© Core Iron Coaching · Mickleham, Melbourne · Online coaching worldwide</div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showResults&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;},&quot;showFaq&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showResults: this.props.showResults ?? true,
+      showFaq: this.props.showFaq ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>

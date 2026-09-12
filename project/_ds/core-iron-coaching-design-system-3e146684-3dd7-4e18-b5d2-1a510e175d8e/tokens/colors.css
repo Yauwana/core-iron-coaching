@@ -1,0 +1,77 @@
+:root{
+  /* ── Iron: warm-neutral graphite, sampled from the fist in the logo mark ── */
+  --iron-950:#0B0C0D;
+  --iron-900:#111315;
+  --iron-850:#17191C;
+  --iron-800:#1E2124;
+  --iron-700:#282C30;
+  --iron-600:#363B40;
+  --iron-500:#4A5054;
+  --iron-400:#6B7276;
+  --iron-300:#949A9E;
+  --iron-200:#BEC3C6;
+  --iron-100:#DEE1E3;
+  --iron-050:#F1F2F3;
+
+  /* ── Steel: the chrome plate highlights. Metallic, never a text colour ─── */
+  --steel-600:#7C8388;
+  --steel-500:#9AA1A6;
+  --steel-300:#C6CBCE;
+  --steel-100:#E7E9EB;
+
+  /* ── Orange: the logo's plate colour. The single hot accent ─────────────── */
+  --orange-700:#8F3B0C;
+  --orange-600:#B84E12;
+  --orange-500:#E2691F;
+  --orange-400:#F0842F;
+  --orange-300:#F7A768;
+  --orange-100:#FBE3D2;
+
+  /* ── Paper: neutral off-whites for the one light band per page ──────────── */
+  --paper-000:#FFFFFF;
+  --paper-050:#FAFAFA;
+  --paper-100:#F0F1F1;
+  --paper-200:#E1E3E3;
+
+  /* ── Semantic hues ─────────────────────────────────────────────────────── */
+  --green-500:#3E9E63;
+  --green-200:#B4E0C4;
+  --red-500:#CF3E2E;
+  --red-200:#F2C0BA;
+  --blue-500:#4A7FD4;
+  --blue-200:#C3D6F3;
+
+  /* ── Surfaces ──────────────────────────────────────────────────────────── */
+  --surface-page:var(--iron-900);
+  --surface-page-alt:var(--paper-100);
+  --surface-card:var(--iron-850);
+  --surface-card-raised:var(--iron-800);
+  --surface-card-light:var(--paper-000);
+  --surface-inset:var(--iron-950);
+  --surface-accent:var(--orange-500);
+  --surface-scrim:rgba(11,12,13,.72);
+
+  /* ── Text ──────────────────────────────────────────────────────────────── */
+  --text-display:var(--paper-000);
+  --text-body:var(--iron-100);
+  --text-muted:var(--iron-300);
+  --text-faint:var(--iron-400);
+  --text-accent:var(--orange-500);
+  --text-on-accent:#FFFFFF;
+  --text-display-inverse:var(--iron-900);
+  --text-body-inverse:var(--iron-700);
+  --text-muted-inverse:var(--iron-500);
+
+  /* ── Borders ───────────────────────────────────────────────────────────── */
+  --border-hairline:rgba(255,255,255,.07);
+  --border-subtle:rgba(255,255,255,.13);
+  --border-strong:rgba(255,255,255,.26);
+  --border-accent:var(--orange-500);
+  --border-inverse:var(--paper-200);
+
+  /* ── Status ────────────────────────────────────────────────────────────── */
+  --status-success:var(--green-500);
+  --status-warning:var(--orange-400);
+  --status-danger:var(--red-500);
+  --status-info:var(--blue-500);
+}

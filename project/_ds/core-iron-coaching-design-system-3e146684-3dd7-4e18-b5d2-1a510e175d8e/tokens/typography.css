@@ -1,0 +1,40 @@
+:root{
+  --font-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --font-body:"Sora",system-ui,-apple-system,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,monospace;
+
+  /* Display is Archivo run narrow AND italic — the "CORE IRON" register from the logo.
+     Eyebrows, buttons and labels stay upright and wide-tracked, like "COACHING". */
+  --display-style:italic; /* @kind other */
+  --display-width:78; /* @kind other */
+  --display-width-tight:70; /* @kind other */
+
+  --fs-display-1:76px;
+  --fs-display-2:56px;
+  --fs-display-3:40px;
+  --fs-title-1:30px;
+  --fs-title-2:24px;
+  --fs-title-3:19px;
+  --fs-body-lg:17px;
+  --fs-body:15px;
+  --fs-body-sm:13.5px;
+  --fs-caption:12px;
+  --fs-eyebrow:11px;
+
+  --lh-display:0.96; /* @kind other */
+  --lh-title:1.15; /* @kind other */
+  --lh-body:1.65; /* @kind other */
+  --lh-tight:1.35; /* @kind other */
+
+  --ls-display:0.005em; /* @kind other */
+  --ls-title:0.01em; /* @kind other */
+  --ls-body:0em; /* @kind other */
+  --ls-eyebrow:0.24em; /* @kind other */
+  --ls-button:0.09em; /* @kind other */
+
+  --fw-regular:400; /* @kind other */
+  --fw-medium:500; /* @kind other */
+  --fw-semibold:600; /* @kind other */
+  --fw-bold:700; /* @kind other */
+  --fw-black:800; /* @kind other */
+}

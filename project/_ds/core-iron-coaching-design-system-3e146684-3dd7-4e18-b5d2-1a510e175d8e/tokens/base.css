@@ -1,0 +1,5 @@
+.ci-eyebrow{font-family:var(--font-display);font-variation-settings:"wdth" var(--display-width);font-size:var(--fs-eyebrow);font-weight:var(--fw-bold);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;color:var(--text-accent)}
+.ci-display{font-family:var(--font-display);font-style:italic;font-variation-settings:"wdth" var(--display-width);font-weight:var(--fw-black);text-transform:uppercase;line-height:var(--lh-display);letter-spacing:var(--ls-display);color:var(--text-display)}
+.ci-prose{font-family:var(--font-body);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text-body);max-width:var(--measure-prose);text-wrap:pretty}
+a{color:var(--orange-500);text-decoration:none}
+a:hover{color:var(--orange-400)}

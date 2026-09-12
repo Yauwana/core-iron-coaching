@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Sora:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* Iron: warm-neutral graphite */
+  --iron-950: #0b0c0d;
+  --iron-900: #111315;
+  --iron-850: #17191c;
+  --iron-800: #1e2124;
+  --iron-700: #282c30;
+  --iron-600: #363b40;
+  --iron-500: #4a5054;
+  --iron-400: #6b7276;
+  --iron-300: #949a9e;
+  --iron-200: #bec3c6;
+  --iron-100: #dee1e3;
+  --iron-050: #f1f2f3;
+
+  /* Steel: chrome plate highlights */
+  --steel-600: #7c8388;
+  --steel-500: #9aa1a6;
+  --steel-300: #c6cbce;
+  --steel-100: #e7e9eb;
+
+  /* Orange: the single hot accent */
+  --orange-700: #8f3b0c;
+  --orange-600: #b84e12;
+  --orange-500: #e2691f;
+  --orange-400: #f0842f;
+  --orange-300: #f7a768;
+  --orange-100: #fbe3d2;
+
+  /* Paper: off-whites for the one light band */
+  --paper-000: #ffffff;
+  --paper-050: #fafafa;
+  --paper-100: #f0f1f1;
+  --paper-200: #e1e3e3;
+
+  /* Semantic */
+  --green-500: #3e9e63;
+  --red-500: #cf3e2e;
+  --blue-500: #4a7fd4;
+
+  /* Surfaces */
+  --surface-page: var(--iron-900);
+  --surface-card: var(--iron-850);
+  --surface-card-raised: var(--iron-800);
+  --surface-inset: var(--iron-950);
+
+  /* Text */
+  --text-display: var(--paper-000);
+  --text-body: var(--iron-100);
+  --text-muted: var(--iron-300);
+  --text-faint: var(--iron-400);
+  --text-accent: var(--orange-500);
+  --text-on-accent: #ffffff;
+  --text-display-inverse: var(--iron-900);
+  --text-body-inverse: var(--iron-700);
+  --text-muted-inverse: var(--iron-500);
+
+  /* Borders */
+  --border-hairline: rgba(255, 255, 255, 0.07);
+  --border-subtle: rgba(255, 255, 255, 0.13);
+  --border-strong: rgba(255, 255, 255, 0.26);
+  --border-accent: var(--orange-500);
+  --border-inverse: var(--paper-200);
+
+  /* Fonts */
+  --font-display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --font-body: "Sora", system-ui, -apple-system, sans-serif;
+
+  --display-width: 78;
+  --display-width-tight: 70;
+
+  --fs-display-1: 76px;
+  --fs-display-2: 56px;
+  --fs-display-3: 40px;
+  --fs-title-1: 30px;
+  --fs-title-2: 24px;
+  --fs-title-3: 19px;
+  --fs-body-lg: 17px;
+  --fs-body: 15px;
+  --fs-body-sm: 13.5px;
+  --fs-caption: 12px;
+  --fs-eyebrow: 11px;
+
+  --lh-display: 0.96;
+  --lh-title: 1.15;
+  --lh-body: 1.65;
+  --lh-tight: 1.35;
+
+  --ls-display: 0.005em;
+  --ls-eyebrow: 0.24em;
+  --ls-button: 0.09em;
+
+  /* Spacing */
+  --gutter-card: 22px;
+  --gutter-section: 96px;
+  --measure-prose: 62ch;
+  --container-max: 1180px;
+  --container-narrow: 760px;
+
+  /* Effects */
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
+
+  --shadow-xs: 0 1px 2px rgba(11, 12, 13, 0.4);
+  --shadow-sm: 0 2px 6px rgba(11, 12, 13, 0.45);
+  --shadow-md: 0 8px 20px rgba(11, 12, 13, 0.5);
+  --shadow-lg: 0 20px 48px rgba(11, 12, 13, 0.6);
+  --shadow-glow-orange: 0 6px 22px rgba(226, 105, 31, 0.32);
+
+  --scrim-bottom: linear-gradient(
+    180deg,
+    rgba(11, 12, 13, 0) 0%,
+    rgba(11, 12, 13, 0.55) 45%,
+    rgba(11, 12, 13, 0.94) 100%
+  );
+  --sheen-orange: linear-gradient(
+    135deg,
+    var(--orange-400) 0%,
+    var(--orange-500) 46%,
+    var(--orange-600) 100%
+  );
+
+  --blur-glass: 14px;
+
+  /* Motion */
+  --dur-fast: 150ms;
+  --dur-base: 220ms;
+  --ease-standard: cubic-bezier(0.2, 0.6, 0.2, 1);
+  --press-scale: 0.975;
+  --lift-y: -2px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--iron-900);
+  color: var(--text-body);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--orange-500);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--orange-400);
+}
+
+summary {
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-link {
+  color: var(--iron-200);
+  transition: color var(--dur-fast) var(--ease-standard);
+}
+
+.nav-link:hover {
+  color: var(--orange-500);
+}
