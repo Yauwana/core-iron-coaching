@@ -12,6 +12,8 @@ import {
   Target,
   Mail,
   MapPin,
+  Menu,
+  X,
   type LucideIcon,
 } from "lucide-react";
 
@@ -29,6 +31,8 @@ const ICONS: Record<string, LucideIcon> = {
   target: Target,
   mail: Mail,
   "map-pin": MapPin,
+  menu: Menu,
+  x: X,
 };
 
 export type IconName = keyof typeof ICONS;

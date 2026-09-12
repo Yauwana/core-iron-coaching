@@ -9,9 +9,10 @@ export function StatCard({ value, label }: { value: string; label: string }) {
           fontVariationSettings: '"wdth" 76',
           fontStyle: "italic",
           fontWeight: 800,
-          fontSize: "clamp(26px,7vw,40px)",
+          fontSize: "clamp(17px,5.2vw,40px)",
           lineHeight: 1,
           color: "var(--orange-500)",
+          whiteSpace: "nowrap",
         }}
       >
         {value}
@@ -22,8 +23,8 @@ export function StatCard({ value, label }: { value: string; label: string }) {
           fontFamily: "var(--font-display)",
           fontVariationSettings: '"wdth" 84',
           fontWeight: 600,
-          fontSize: 10.5,
-          letterSpacing: "0.18em",
+          fontSize: "clamp(8.5px,2.2vw,10.5px)",
+          letterSpacing: "0.05em",
           textTransform: "uppercase",
           color: "var(--text-muted)",
         }}

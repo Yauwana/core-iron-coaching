@@ -72,11 +72,27 @@ export function Hero() {
             Personalised strength and fat-loss coaching for beginners and busy people. Online from
             anywhere in the world, or one-on-one at Genesis Fitness Mickleham, Melbourne.
           </p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginTop: 32 }}>
-            <Button size="lg" variant="primary" iconRight="arrow-right" href={CALENDLY_URL} target="_blank" rel="noopener">
+          <div className="hero-cta-row">
+            <Button
+              size="lg"
+              variant="primary"
+              iconRight="arrow-right"
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener"
+              style={{ width: "100%", justifyContent: "center" }}
+            >
               Book a free consult
             </Button>
-            <Button size="lg" variant="secondary" icon="message-circle" href={WHATSAPP_URL} target="_blank" rel="noopener">
+            <Button
+              size="lg"
+              variant="secondary"
+              icon="message-circle"
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener"
+              style={{ width: "100%", justifyContent: "center" }}
+            >
               Message on WhatsApp
             </Button>
           </div>
@@ -90,7 +106,7 @@ export function Hero() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3,minmax(0,1fr))", gap: 16 }}>
           <StatCard value="2 yrs" label="Coaching clients" />
           <StatCard value="NHFA" label="Certified coach" />
-          <StatCard value="1-on-1" label="Never templated" />
+          <StatCard value="1‑on‑1" label="Never templated" />
         </div>
       </div>
     </section>

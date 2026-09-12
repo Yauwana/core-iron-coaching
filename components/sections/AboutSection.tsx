@@ -32,7 +32,8 @@ export function AboutSection() {
             real results — helping one client lose weight without a strict diet, and others build steady
             muscle over a year or more, adapting the plan to real life rather than a rigid template. I&apos;m
             now bringing that same one-on-one coaching approach in person at Genesis Fitness Mickleham,
-            Melbourne. Backed by NHFA Cert
+            Melbourne. Backed by a Certificate III & IV in Fitness (NHFA) and a Precision Nutrition
+            Level 1 certification.
           </p>
           <div style={{ marginTop: 20, display: "flex", flexDirection: "column", gap: 2 }}>
             <span
@@ -52,9 +53,21 @@ export function AboutSection() {
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 22 }}>
             <Badge tone="solid" shape="square">NHFA certified</Badge>
+            <Badge tone="solid" shape="square">Precision Nutrition L1</Badge>
             <Badge tone="solid" shape="square">2 years coaching</Badge>
             <Badge tone="solid" shape="square">Online and in person</Badge>
           </div>
+          <img
+            src="/images/badge-pn-l1.png"
+            alt="Precision Nutrition Level 1 Certified Coach"
+            style={{
+              width: 72,
+              height: 72,
+              borderRadius: "50%",
+              border: "2px solid var(--orange-500)",
+              marginTop: 16,
+            }}
+          />
         </div>
       </div>
     </Section>

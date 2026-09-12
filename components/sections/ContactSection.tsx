@@ -18,7 +18,7 @@ export function ContactSection() {
           Choose a time
         </Button>
       </div>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))", gap: 16 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))", gap: 16 }}>
         <ContactTile icon="message-circle" label="WhatsApp" value="+61 458 975 420" detail="Fastest reply, any time zone" href={WHATSAPP_URL} />
         <ContactTile icon="mail" label="Email" value={EMAIL} detail="For longer questions" href={`mailto:${EMAIL}?subject=Free%20consult%20enquiry%20-%20Core%20Iron%20Coaching`} />
         <ContactTile icon="map-pin" label="In person" value="Genesis Fitness Mickleham" detail="Mickleham, Melbourne VIC" />

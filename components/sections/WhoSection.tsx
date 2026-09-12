@@ -11,7 +11,7 @@ const AUDIENCES = [
 export function WhoSection() {
   return (
     <Section band="dark" align="left" kicker="Who I work with" title="Built for people with" accent="a real schedule">
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))", gap: 16 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))", gap: 16 }}>
         {AUDIENCES.map((a) => (
           <FeatureCard key={a.title} icon={a.icon} title={a.title}>
             {a.body}

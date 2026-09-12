@@ -178,3 +178,36 @@ summary::-webkit-details-marker {
 .nav-link:hover {
   color: var(--orange-500);
 }
+
+.nav-desktop {
+  display: flex;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-mobile-panel {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav-mobile-panel.is-open {
+    display: flex;
+  }
+}
+
+.hero-cta-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 32px;
+}
