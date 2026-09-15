@@ -16,7 +16,7 @@ export function ContactTile({
 }) {
   const Tag = href ? "a" : "div";
   return (
-    <Card surface="raised" interactive={!!href} padding="22px 18px" style={{ textAlign: "center" }}>
+    <Card surface="raised" interactive padding="22px 18px" style={{ textAlign: "center" }}>
       <Tag
         href={href}
         target={href?.startsWith("http") ? "_blank" : undefined}

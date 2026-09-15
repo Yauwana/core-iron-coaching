@@ -7,6 +7,7 @@ export function PhotoFrame({
   src,
   alt = "",
   priority = false,
+  objectPosition = "center",
   style,
 }: {
   label?: string;
@@ -15,6 +16,7 @@ export function PhotoFrame({
   src?: string;
   alt?: string;
   priority?: boolean;
+  objectPosition?: string;
   style?: React.CSSProperties;
 }) {
   return (
@@ -31,7 +33,14 @@ export function PhotoFrame({
       }}
     >
       {src ? (
-        <Image src={src} alt={alt} fill sizes="(max-width: 800px) 100vw, 50vw" style={{ objectFit: "cover" }} priority={priority} />
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes="(max-width: 800px) 100vw, 50vw"
+          style={{ objectFit: "cover", objectPosition }}
+          priority={priority}
+        />
       ) : (
         <span
           style={{

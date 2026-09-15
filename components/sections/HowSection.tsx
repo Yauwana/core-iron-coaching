@@ -24,7 +24,7 @@ export function HowSection() {
     <Section band="dark" align="left" kicker="The method" title="How it" accent="works">
       <div id="how" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 16 }}>
         {STEPS.map((step) => (
-          <Card key={step.n} surface="raised" padding="28px 26px">
+          <Card key={step.n} surface="raised" interactive padding="28px 26px">
             <div
               style={{
                 fontFamily: "var(--font-display)",

@@ -98,7 +98,13 @@ export function Hero() {
           </div>
         </div>
         <div style={{ minWidth: 0 }}>
-          <PhotoFrame src="/images/hero-coach.png" alt="Ravindra, coach at Core Iron Coaching" ratio="4 / 5" priority />
+          <PhotoFrame
+            src="/images/hero-coach.png"
+            alt="Ravindra, coach at Core Iron Coaching"
+            ratio="4 / 5"
+            objectPosition="center bottom"
+            priority
+          />
         </div>
       </div>
 
