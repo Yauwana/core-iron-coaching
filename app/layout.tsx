@@ -55,6 +55,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           gtag('config', 'AW-18491498983');
         `}
       </Script>
+      {/* Event snippet for Page view conversion page, right after the Google tag,
+          per Google Ads' install instructions. */}
+      <Script id="gtag-report-conversion" strategy="beforeInteractive">
+        {`
+          function gtag_report_conversion(url) {
+            var callback = function () {
+              if (typeof(url) != 'undefined') {
+                window.location = url;
+              }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-18491498983/d8pYCJnh6Y4dEOfDt_FE',
+                'value': 1.0,
+                'currency': 'AUD',
+                'event_callback': callback
+            });
+            return false;
+          }
+        `}
+      </Script>
     </html>
   );
 }
