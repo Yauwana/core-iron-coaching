@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { SITE_URL } from "@/lib/content";
 
@@ -39,6 +40,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>{children}</body>
+      {/* Google tag (gtag.js) — strategy="beforeInteractive" makes Next.js
+          inject these scripts into <head>, matching Google's install instructions. */}
+      <Script
+        strategy="beforeInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-18491498983"
+      />
+      <Script id="google-tag" strategy="beforeInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'AW-18491498983');
+        `}
+      </Script>
     </html>
   );
 }
