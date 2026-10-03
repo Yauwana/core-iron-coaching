@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { CALENDLY_URL, WHATSAPP_URL, EMAIL } from "@/lib/content";
+import { ConsultLink } from "@/components/ui/ConsultLink";
+import { WHATSAPP_URL, EMAIL } from "@/lib/content";
 
 const linkStyle: React.CSSProperties = {
   fontFamily: "var(--font-display)",
@@ -32,9 +33,7 @@ export function Footer() {
           <a href={WHATSAPP_URL} target="_blank" rel="noopener" style={linkStyle}>
             WhatsApp
           </a>
-          <a href={CALENDLY_URL} target="_blank" rel="noopener" style={linkStyle}>
-            Book a consult
-          </a>
+          <ConsultLink style={linkStyle}>Book a consult</ConsultLink>
         </div>
       </div>
       <div

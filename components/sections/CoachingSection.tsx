@@ -114,7 +114,7 @@ export function CoachingSection() {
               ))}
             </ul>
             <span style={{ marginTop: "auto", display: "block" }}>
-              <Button size="sm" variant="ghost" iconRight="arrow-right" href={CALENDLY_URL} target="_blank" rel="noopener" style={{ paddingLeft: 0 }}>
+              <Button size="sm" variant="ghost" iconRight="arrow-right" href={CALENDLY_URL} target="_blank" rel="noopener" trackConsultClick style={{ paddingLeft: 0 }}>
                 Enquire
               </Button>
             </span>

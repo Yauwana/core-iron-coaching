@@ -61,7 +61,7 @@ export function Header() {
             {link.label}
           </a>
         ))}
-        <Button size="sm" variant="primary" icon="calendar-days" href={CALENDLY_URL} target="_blank" rel="noopener">
+        <Button size="sm" variant="primary" icon="calendar-days" href={CALENDLY_URL} target="_blank" rel="noopener" trackConsultClick>
           Free consult
         </Button>
       </nav>
@@ -118,6 +118,7 @@ export function Header() {
           href={CALENDLY_URL}
           target="_blank"
           rel="noopener"
+          trackConsultClick
           style={{ marginTop: 10 }}
         >
           Free consult

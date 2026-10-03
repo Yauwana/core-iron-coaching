@@ -14,7 +14,7 @@ export function ContactSection() {
       intro="Pick a time that suits you, or send a message first if you would rather ask a few questions."
     >
       <div id="contact" style={{ display: "flex", justifyContent: "center", marginBottom: 40 }}>
-        <Button size="lg" variant="primary" iconRight="arrow-right" href={CALENDLY_URL} target="_blank" rel="noopener">
+        <Button size="lg" variant="primary" iconRight="arrow-right" href={CALENDLY_URL} target="_blank" rel="noopener" trackConsultClick>
           Choose a time
         </Button>
       </div>

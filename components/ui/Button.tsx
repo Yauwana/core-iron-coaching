@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Icon } from "./Icon";
+import { reportConsultConversion } from "@/lib/gtag";
 
 type Variant = "primary" | "secondary" | "ghost" | "solidDark";
 type Size = "sm" | "md" | "lg";
@@ -49,6 +50,7 @@ export function Button({
   target,
   rel,
   style,
+  trackConsultClick,
 }: {
   children: React.ReactNode;
   variant?: Variant;
@@ -59,6 +61,8 @@ export function Button({
   target?: string;
   rel?: string;
   style?: React.CSSProperties;
+  /** Fires the Google Ads "book a consult" conversion event on click. */
+  trackConsultClick?: boolean;
 }) {
   const [hover, setHover] = useState(false);
   const [down, setDown] = useState(false);
@@ -98,6 +102,7 @@ export function Button({
       target={target}
       rel={rel}
       style={base}
+      onClick={trackConsultClick ? reportConsultConversion : undefined}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => {
         setHover(false);

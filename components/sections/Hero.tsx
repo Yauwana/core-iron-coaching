@@ -80,6 +80,7 @@ export function Hero() {
               href={CALENDLY_URL}
               target="_blank"
               rel="noopener"
+              trackConsultClick
               style={{ width: "100%", justifyContent: "center" }}
             >
               Book a free consult
