@@ -49,7 +49,7 @@ const ABOUT_SLIDES = [
   {
     src: "/images/coach-medal-hero.png",
     alt: "Ravindra, coach at Core Iron Coaching, posing with a bodybuilding medal",
-    label: "Competition medal",
+    label: "Competition",
   },
   {
     src: "/images/before.jpg",
@@ -112,7 +112,7 @@ export function AboutSection() {
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 22 }}>
             <Badge tone="solid" shape="square">2026 NBA Overall Winner</Badge>
-            <Badge tone="solid" shape="square">NHFA certified</Badge>
+            <Badge tone="solid" shape="square">Cert III & IV in Fitness</Badge>
             <Badge tone="solid" shape="square">Precision Nutrition L1</Badge>
             <Badge tone="solid" shape="square">2 years coaching</Badge>
             <Badge tone="solid" shape="square">Online and in person</Badge>

@@ -112,7 +112,7 @@ export function Hero() {
       <div style={{ position: "relative", maxWidth: "var(--container-max)", margin: "44px auto 0" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3,minmax(0,1fr))", gap: 16 }}>
           <StatCard value="2 yrs" label="Coaching clients" />
-          <StatCard value="NHFA" label="Certified coach" />
+          <StatCard value="III & IV" label="Fitness cert" />
           <StatCard value="1‑on‑1" label="Never templated" />
         </div>
       </div>
